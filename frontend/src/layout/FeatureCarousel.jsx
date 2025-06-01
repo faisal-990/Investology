@@ -37,24 +37,25 @@ function FeatureCarousel() {
     },
   ];
   return (
-    <section className="flex flex-col items-center">
-      <div className="mb-5 bg-indigo-200 inline-block p-2 rounded-xl">
+    <section className="hover:bg-gradient-to-t hover:slate-600 rounded-xl flex flex-col items-center">
+      <div className="hover:scale-125 hover:translate-y-2 duration-500 mb-5 bg-indigo-200 inline-block p-2 rounded-xl">
         <strong className="text-center block text-2xl font-bold">
           Features
         </strong>
       </div>
       <div className="flex justify-center ">
         <Carousel className="w-64 max-w-2xl md:w-3/4">
-          <CarouselContent>
+          <CarouselContent className="m-5">
             {features.map((feature, index) => (
               <CarouselItem key={index} className="p-4 md:basis-1/2">
                 <Card className="h-full items-center">
                   <CardHeader>
-                    <CardTitle>{feature.title}</CardTitle>
-                    <CardDescription>{feature.description}</CardDescription>
+                    <CardTitle className="font-bold md:text-2xl">{feature.title}</CardTitle>
+                    <CardDescription className="p-8 text-l text-pretty md:text-xl">{feature.description}</CardDescription>
                   </CardHeader>
                   <CardContent>
                     {/* Additional content can go here */}
+                    {/* add images like graphs to make this interactive*/}
                   </CardContent>
                 </Card>
               </CarouselItem>

@@ -108,8 +108,8 @@ function FeaturedInvestors() {
   ];
 
   return (
-    <section className="flex flex-col items-center">
-      <div className="mb-5 bg-indigo-200 inline-block p-2 rounded-xl">
+    <section className="hover:bg-slate-600 rounded-xl flex flex-col items-center">
+      <div className="hover:scale-125 hover:duration-500 hover:translate-x-2 mb-5 bg-indigo-200 inline-block p-2 rounded-xl">
         <strong className="text-center block text-2xl font-bold">
           Mimic Famous Investors' Strategies
         </strong>
@@ -121,16 +121,16 @@ function FeaturedInvestors() {
               <CarouselItem key={index} className="p-4 md:basis-1/2">
                 <Card className="h-auto items-center">
                   <CardHeader>
-                    <CardTitle>{investor.name}</CardTitle>
+                    <CardTitle className="font-extrabold text-2xl">{investor.name}</CardTitle>
                     <CardDescription>
-                      <ul className="list-disc list-inside">
+                      <ul className=" font-bold  text-black list-disc list-inside">
                         {investor.principles.map((principle, idx) => (
                           <li key={idx}>{principle}</li>
                         ))}
                       </ul>
                     </CardDescription>
                   </CardHeader>
-                  <CardContent>
+                  <CardContent className="mb-16">
                     {/* Additional content can go here */}
                   </CardContent>
                 </Card>
