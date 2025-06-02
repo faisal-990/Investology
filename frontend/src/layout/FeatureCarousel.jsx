@@ -15,6 +15,10 @@ import {
 
 function FeatureCarousel() {
   const features = [
+      {
+        title: 'Expert invest for you',
+        description: 'Let your profile be managed by experts , like how you always wandered , they do it !!',
+      },
     {
       title: 'Real-Time Market Data',
       description: 'Stay updated with live market trends and data.',
@@ -44,11 +48,12 @@ function FeatureCarousel() {
         </strong>
       </div>
       <div className="flex justify-center ">
-        <Carousel className="w-64 max-w-2xl md:w-3/4">
-          <CarouselContent className="m-5">
+        <Carousel className="w-64 max-w-3xl sm:w-1/2">
+          <CarouselContent className="m-2">
             {features.map((feature, index) => (
-              <CarouselItem key={index} className="p-4 md:basis-1/2">
-                <Card className="h-full items-center">
+              <CarouselItem key={index} className="p-4 ">
+                <Card className=" bg-slate-300 h-full items-center">
+
                   <CardHeader>
                     <CardTitle className="font-bold md:text-2xl">{feature.title}</CardTitle>
                     <CardDescription className="p-8 text-l text-pretty md:text-xl">{feature.description}</CardDescription>
