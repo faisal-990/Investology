@@ -14,7 +14,7 @@ function MainContentLandingPage() {
             </h4>
           </div>
           <p className="text-pretty text-white mb-4 sm:mb-4 md:text-xl">
-           <strong> Experience Calm, Focused Trading Simulation </strong>
+            <strong> Experience Calm, Focused Trading Simulation </strong>
           </p>
           <p className="text-pretty md:text-xl">
             A subtle, distraction-free environment to practice trading, explore

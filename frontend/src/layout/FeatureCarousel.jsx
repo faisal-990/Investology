@@ -15,10 +15,11 @@ import {
 
 function FeatureCarousel() {
   const features = [
-      {
-        title: 'Expert invest for you',
-        description: 'Let your profile be managed by experts , like how you always wandered , they do it !!',
-      },
+    {
+      title: 'Expert invest for you',
+      description:
+        'Let your profile be managed by experts , like how you always wandered , they do it !!',
+    },
     {
       title: 'Real-Time Market Data',
       description: 'Stay updated with live market trends and data.',
@@ -53,10 +54,13 @@ function FeatureCarousel() {
             {features.map((feature, index) => (
               <CarouselItem key={index} className="p-4 ">
                 <Card className=" bg-slate-300 h-full items-center">
-
                   <CardHeader>
-                    <CardTitle className="font-bold md:text-2xl">{feature.title}</CardTitle>
-                    <CardDescription className="p-8 text-l text-pretty md:text-xl">{feature.description}</CardDescription>
+                    <CardTitle className="font-bold md:text-2xl">
+                      {feature.title}
+                    </CardTitle>
+                    <CardDescription className="p-8 text-l text-pretty md:text-xl">
+                      {feature.description}
+                    </CardDescription>
                   </CardHeader>
                   <CardContent>
                     {/* Additional content can go here */}

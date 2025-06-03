@@ -9,8 +9,10 @@ export default function Header() {
     setIsMenuOpen(!isMenuOpen);
   };
 
-  const liDesign = "hover:bg-white/20 md:text-xl rounded-md transition-colors duration-200";
-  const listDesign = "block px-3 py-2 text-gray-800 hover:text-blue-600 transition-colors duration-200";
+  const liDesign =
+    'hover:bg-white/20 md:text-xl rounded-md transition-colors duration-200';
+  const listDesign =
+    'block px-3 py-2 text-gray-800 hover:text-blue-600 transition-colors duration-200';
 
   return (
     <header className="bg-gradient-to-r from-red-500 via-slate-300 to-sky-400 p-4">
@@ -38,16 +40,24 @@ export default function Header() {
         {/* Desktop Navigation Menu */}
         <nav className="hidden md:flex md:rounded-lg md:hover:bg-indigo-200 gap-2 text-sm font-medium">
           <li className={liDesign} style={{ listStyle: 'none' }}>
-            <Link to="/" className={listDesign}>Home</Link>
+            <Link to="/" className={listDesign}>
+              Home
+            </Link>
           </li>
           <li className={liDesign} style={{ listStyle: 'none' }}>
-            <Link to="/portfolio" className={listDesign}>Portfolio</Link>
+            <Link to="/portfolio" className={listDesign}>
+              Portfolio
+            </Link>
           </li>
           <li className={liDesign} style={{ listStyle: 'none' }}>
-            <Link to="/investors" className={listDesign}>Investors</Link>
+            <Link to="/investors" className={listDesign}>
+              Investors
+            </Link>
           </li>
           <li className={liDesign} style={{ listStyle: 'none' }}>
-            <Link to="/Dashboard" className={listDesign}>Dashboard</Link>
+            <Link to="/Dashboard" className={listDesign}>
+              Dashboard
+            </Link>
           </li>
         </nav>
 
@@ -65,7 +75,11 @@ export default function Header() {
             className="p-2 rounded-md text-gray-800 hover:text-blue-600 hover:bg-white/20 transition-colors duration-200"
             aria-label="Toggle menu"
           >
-            {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+            {isMenuOpen ? (
+              <X className="h-6 w-6" />
+            ) : (
+              <Menu className="h-6 w-6" />
+            )}
           </button>
         </div>
       </div>
@@ -76,20 +90,42 @@ export default function Header() {
           <nav>
             <ul className="space-y-2">
               <li className={liDesign} style={{ listStyle: 'none' }}>
-                <Link to="/" className={listDesign} onClick={() => setIsMenuOpen(false)}>Home</Link>
+                <Link
+                  to="/"
+                  className={listDesign}
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  Home
+                </Link>
               </li>
               <li className={liDesign} style={{ listStyle: 'none' }}>
-                <Link to="/portfolio" className={listDesign} onClick={() => setIsMenuOpen(false)}>Portfolio</Link>
+                <Link
+                  to="/portfolio"
+                  className={listDesign}
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  Portfolio
+                </Link>
               </li>
               <li className={liDesign} style={{ listStyle: 'none' }}>
-                <Link to="/investors" className={listDesign} onClick={() => setIsMenuOpen(false)}>Investors</Link>
+                <Link
+                  to="/investors"
+                  className={listDesign}
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  Investors
+                </Link>
               </li>
               <li className={liDesign} style={{ listStyle: 'none' }}>
-                <Link to="dashboard"className={listDesign} onClick={() => setIsMenuOpen(false)}>Dashboard</Link>
-
+                <Link
+                  to="dashboard"
+                  className={listDesign}
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  Dashboard
+                </Link>
               </li>
             </ul>
-
 
             {/* Mobile Login Button */}
             <div className="mt-4 pt-4 border-t border-white/20">
@@ -106,4 +142,3 @@ export default function Header() {
     </header>
   );
 }
-

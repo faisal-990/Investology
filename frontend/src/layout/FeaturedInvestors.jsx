@@ -121,7 +121,9 @@ function FeaturedInvestors() {
               <CarouselItem key={index} className="p-4 ">
                 <Card className="bg-slate-400 h-auto items-center">
                   <CardHeader>
-                    <CardTitle className="font-extrabold text-2xl">{investor.name}</CardTitle>
+                    <CardTitle className="font-extrabold text-2xl">
+                      {investor.name}
+                    </CardTitle>
                     <CardDescription>
                       <ul className="md:text-xl font-bold  text-black list-disc list-inside">
                         {investor.principles.map((principle, idx) => (

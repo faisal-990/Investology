@@ -1,6 +1,5 @@
 //import { slate, gray, neutral, stone, sky, red, blue } from 'tailwindcss/colors';
 
-
 /** @type {import('tailwindcss').Config} */
 export default {
   darkMode: ['class'],
@@ -33,13 +32,13 @@ export default {
       },
 
       colors: {
-    //slate,
-     //gray,
-     //neutral,
-     //stone,
-     //sky,
-     //red,
-     //blue,
+        //slate,
+        //gray,
+        //neutral,
+        //stone,
+        //sky,
+        //red,
+        //blue,
         border: 'hsl(var(--border))',
         input: 'hsl(var(--input))',
         ring: 'hsl(var(--ring))',

@@ -1,7 +1,5 @@
 function Portfolio() {
-  return (
-    <div>hello portfolio</div>
-  )
+  return <div>hello portfolio</div>;
 }
 
-export default Portfolio
+export default Portfolio;
