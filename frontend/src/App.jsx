@@ -4,25 +4,27 @@ import Home from './pages/Home';
 import Portfolio from './pages/Portfolio';
 import Dashboard from './pages/Dashboard';
 import Investors from './pages/Investors';
-
-//path is where the parent is , its child (diff pages from that page) reside in the children array, and it is accesiible by outlet so layout renders header footer and outlet in between , that renders all the other elements.
+import { StockDataProvider } from './Context/StockDataContext';
 
 const router = createBrowserRouter([
   {
     path: '/',
     element: <Layout />,
     children: [
-      { index: true, element: <Home /> }, // path: '/'
-      { path: 'portfolio', element: <Portfolio /> }, // path: '/portfolio'
-      { path: 'dashboard', element: <Dashboard /> }, // path: '/dashboard'
-      { path: 'investors', element: <Investors /> }, // path: '/investors'
-      // more routes here
+      { index: true, element: <Home /> },
+      { path: 'portfolio', element: <Portfolio /> },
+      { path: 'dashboard', element: <Dashboard /> },
+      { path: 'investors', element: <Investors /> },
     ],
   },
 ]);
 
 function App() {
-  return <RouterProvider router={router} />;
+  return (
+    <StockDataProvider>
+      <RouterProvider router={router} />
+    </StockDataProvider>
+  );
 }
 
 export default App;
